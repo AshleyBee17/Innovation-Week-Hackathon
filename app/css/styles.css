@@ -7,7 +7,7 @@ html,body{
 }
 
 .sidenav{
-	background-color: red;
+	background-color: white;
 	height:100%;
 	overflow: hidden;
 	
@@ -40,7 +40,7 @@ html,body{
 }
 
 .content-area{
-	background-color:blue;
+	background-color:whitesmoke;
 	height:100%;
 
 }
@@ -52,7 +52,8 @@ html,body{
 
 .title{
 	text-align:center;
-	background-color:cyan;
+	background-color:black;
+	color:white;
 }
 
 .description-box{
