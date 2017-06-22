@@ -10,8 +10,7 @@ html,body{
 	background-color: red;
 	height:100%;
 	overflow: hidden;
-	position: absolute;
-	z-index: 1;
+	
 }
 
 .sidenav a {
@@ -48,6 +47,7 @@ html,body{
 
 .main-wrapper{
 	width:100%;
+	padding:0 0;
 }
 
 .title{
@@ -72,6 +72,33 @@ html,body{
 	color:black;
 }
 
+
 .women-wrapper img{
 	padding:15 15;
 }
+=======
+.landing-page{
+	background-image:url("https://i.groupme.com/1024x683.jpeg.f6a6517db7c546bf81b72d53f2307cdb");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100%;
+	padding:0 0;
+}
+
+.landing-page div{
+	text-align: center;
+	width:100%;
+}
+.image-wrapper{
+	background-color:rgba(255,255,255,0.5);
+
+}
+
+.bar-logo img{
+	width:15em;
+}
+
+.bar-logo-wrapper{
+	text-align: center;
+}
+

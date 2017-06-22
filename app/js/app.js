@@ -1,12 +1,33 @@
-$(document).ready(function(){
-    $("#sidebarbutton").click(function(){
-        $("#myBar").slideToggle({direction:'right'});
-        $("#page-content").css("margin-left","255px");
-    });
-
-    $("#close").click(function() {
-    	$("#myBar").slideToggle();
-        $("#page-content").css("margin-left","0px");
-
-    })
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		slidesNavigation: false,
+		autoScrolling: false,
+		responsiveSlides: false,
+		navigation: false,
+		scrollBar: false,
+		css3: true,
+		scrollingSpeed: 700,
+		fitToSection: false,
+		fitToSectionDelay: 0,
+		scrollBar: false,
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+		loopBottom: false,
+		loopTop: false,
+		loopHorizontal: false,
+		continuousVertical: false,
+		continuousHorizontal: false,
+		scrollHorizontally: false,
+		interlockedSlides: false,
+		dragAndMove: false,
+		offsetSections: false,
+		resetSliders: false,
+		fadingEffect: false,
+		scrollOverflow: false,
+		scrollOverflowReset: false,
+		scrollOverflowOptions: null,
+		touchSensitivity: 15,
+		normalScrollElementTouchThreshold: 5,
+		bigSectionsDestination: null
+	});
 });
