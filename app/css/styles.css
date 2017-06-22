@@ -62,6 +62,9 @@ html,body{
 
 .button-wrapper{
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .button-wrapper a{
