@@ -22,7 +22,8 @@ html,body{
 }
 
 .sidenav a:hover{
-	color:grey;
+
+	color:gray;
 }
 
 #myBar{
@@ -45,6 +46,13 @@ html,body{
 
 }
 
+#page-content{
+    background-color:whitesmoke;
+}
+.content-area-wrapper{
+    background-color:whitesmoke;
+}
+
 .main-wrapper{
 	width:100%;
 	padding:0 0;
@@ -53,7 +61,7 @@ html,body{
 .title{
 	text-align:center;
 	background-color:black;
-	color:white;
+    color: white;
 }
 
 .description-box{
@@ -107,6 +115,14 @@ html,body{
 	text-align: center;
 }
 
+
+.no-bullets {
+    list-style-type: none;
+}
+
+.fonts {
+    font: "Helvetica";
+}
 .spotlight-wrapper{
 	display:flex;
 	align-items: center;
@@ -119,4 +135,5 @@ html,body{
 .center{
 	text-align:center;
 	
+
 }
