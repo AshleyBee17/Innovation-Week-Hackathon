@@ -9,6 +9,10 @@ html,body{
 .sidenav{
 	background-color: red;
 	height:100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	display: none;
 }
 
 .sidenav a {
