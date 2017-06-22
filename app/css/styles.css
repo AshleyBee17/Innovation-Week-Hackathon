@@ -85,5 +85,13 @@ html,body{
 }
 .image-wrapper{
 	background-color:rgba(255,255,255,0.5);
-	
+
+}
+
+.bar-logo img{
+	width:9em
+}
+
+.bar-logo-wrapper{
+	text-align: center;
 }
