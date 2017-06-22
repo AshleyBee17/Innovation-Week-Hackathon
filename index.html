@@ -27,19 +27,26 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
 
 	<!-- Link to App -->
-	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="app/js/app.js"></script>
 	</head>
 
 <body>
 	<div class="container main-wrapper">
 		<div class="row">
-			<div class="col-md-3 sidenav">
+			<div class="col-md-3 sidenav" id="myBar">
+				<a href="#" id="close">x</a>
 				<a href="#" class="logo">Logo placeholder</a>
 				<a href="#">Home</a>
 				<a href="#">Intern 101</a>
 				<a href="#">Events</a>
 			</div>
-			<div class="col-md-9 content-area">
+			<div class="col-md-9" id="menu-part">
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 content-area">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="title">
@@ -58,6 +65,9 @@
 								Curabitur venenatis aliquet ex ac convallis. Donec vitae massa at nunc bibendum convallis sit amet id nisl. Vestibulum in nisl maximus, aliquam neque a, dictum leo. Ut eu pulvinar arcu. Maecenas in lectus dignissim, tincidunt lorem at, molestie elit. Pellentesque justo urna, sodales ac mollis eget, finibus quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus felis in malesuada pellentesque. Vivamus viverra suscipit dolor, a convallis tortor accumsan at. Duis vulputate condimentum elit, non scelerisque turpis cursus non. In eget est ex. Integer quis est dignissim, auctor velit sed, faucibus lacus. Curabitur mattis aliquet diam et ultrices. Sed malesuada, arcu vitae auctor vulputate, arcu neque viverra nisi, in elementum arcu purus et elit. Etiam consequat libero nec lectus auctor imperdiet.
 							</p>
 						</div>
+					</div>
+					<div>
+						<button id="sidebarbutton">clicky</button>
 					</div>
 				</div>
 			</div>

@@ -9,6 +9,9 @@ html,body{
 .sidenav{
 	background-color: red;
 	height:100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
 }
 
 .sidenav a {
@@ -21,6 +24,11 @@ html,body{
 
 .sidenav a:hover{
 	color:white;
+}
+
+#myBar{
+	display: none;
+
 }
 
 .main{
