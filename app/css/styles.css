@@ -59,3 +59,15 @@ html,body{
 	border-style: solid;
 	border-color:black;
 }
+
+.button-wrapper{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-wrapper a{
+	font-size:2.5em;
+	color:black;
+}
