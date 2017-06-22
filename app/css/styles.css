@@ -78,3 +78,12 @@ html,body{
 	background-size:100%;
 	padding:0 0;
 }
+
+.landing-page div{
+	text-align: center;
+	width:100%;
+}
+.image-wrapper{
+	background-color:rgba(255,255,255,0.5);
+	
+}
