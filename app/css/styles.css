@@ -7,7 +7,7 @@ html,body{
 }
 
 .sidenav{
-	background-color: red;
+	background-color: white;
 	height:100%;
 	overflow: hidden;
 	
@@ -22,7 +22,7 @@ html,body{
 }
 
 .sidenav a:hover{
-	color:white;
+	color:gray;
 }
 
 #myBar{
@@ -40,9 +40,16 @@ html,body{
 }
 
 .content-area{
-	background-color:blue;
+	background-color:whitesmoke;
 	height:100%;
 
+}
+
+#page-content{
+    background-color:whitesmoke;
+}
+.content-area-wrapper{
+    background-color:whitesmoke;
 }
 
 .main-wrapper{
@@ -52,12 +59,13 @@ html,body{
 
 .title{
 	text-align:center;
-	background-color:cyan;
+	background-color:black;
+    color: white;
 }
 
 .description-box{
 	border-style: solid;
-	border-color:black;
+	border-color:whitesmoke;
 }
 
 .button-wrapper{
@@ -102,3 +110,10 @@ html,body{
 	text-align: center;
 }
 
+.no-bullets {
+    list-style-type: none;
+}
+
+.fonts {
+    font: "Helvetica";
+}
