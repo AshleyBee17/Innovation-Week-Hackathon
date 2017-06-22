@@ -21,7 +21,15 @@
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
 	<!-- Angular CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-route.js"></script>
+    <!-- Link to App -->
+	<script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app/js/controllers/navController.js"></script>
+    <script type="text/javascript" src="app/js/controllers/homeController.js"></script>
+    <script type="text/javascript" src="app/js/controllers/eventsController.js"></script>
+    <script type="text/javascript" src="app/js/controllers/intern101Controller.js"></script>
+
 
 	<!-- Foundation CDN -->
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,11 +39,10 @@
 	<!-- Modernizr CDN -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
 
-	<!-- Link to App -->
-	<script type="text/javascript" src="app/js/app.js"></script>
+	
 	</head>
 
-<body>
+<body ng-app="myApp">
 	<div class="container main-wrapper" id="fullpage">
 		<div class="section active landing-page">
 			<div class="image-wrapper">
@@ -43,7 +50,7 @@
 			</div>
 		</div>
 		<div class="row section">
-			<div class="col-md-3 sidenav">
+			<nav class="col-md-3 sidenav" ng-controller="navController">
 				<div class="row">
 					<div class="col-md-12 bar-logo-wrapper">
 						<span class = "bar-logo">
@@ -51,12 +58,16 @@
 						</span>
 					</div>
 				</div>
+				<ul class="nav navbar-nav">
+				    <li ng-class="{active: isActive('/home')}"><a href="/home">Home</a></li>
+                    <li ng-class="{active: isActive('/intern101')}"><a href="/intern101">Intern 101</a></li>>
+				    <li ng-class="{active: isActive('/events')}"><a href="/events">Events</a>
+				    </li>
+				</ul>
 
-				<a href="#">Home</a>
-				<a href="#">Intern 101</a>
-				<a href="#">Events</a>
-			</div>
-			<div class="col-md-9 content-area">
+				
+			</nav>
+			<div class="col-md-9">
 				<div class="row button-wrapper">
 					<div class="col-md-12">
 						<div class="title">
@@ -74,6 +85,9 @@
 							<p>
 								Curabitur venenatis aliquet ex ac convallis. Donec vitae massa at nunc bibendum convallis sit amet id nisl. Vestibulum in nisl maximus, aliquam neque a, dictum leo. Ut eu pulvinar arcu. Maecenas in lectus dignissim, tincidunt lorem at, molestie elit. Pellentesque justo urna, sodales ac mollis eget, finibus quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus felis in malesuada pellentesque. Vivamus viverra suscipit dolor, a convallis tortor accumsan at. Duis vulputate condimentum elit, non scelerisque turpis cursus non. In eget est ex. Integer quis est dignissim, auctor velit sed, faucibus lacus. Curabitur mattis aliquet diam et ultrices. Sed malesuada, arcu vitae auctor vulputate, arcu neque viverra nisi, in elementum arcu purus et elit. Etiam consequat libero nec lectus auctor imperdiet.
 							</p>
+							<div class="container">
+							    <div ng-view></div>					    
+							</div>
 						</div>
 					</div>
 				</div>

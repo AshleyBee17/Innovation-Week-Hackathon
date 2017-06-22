@@ -3,6 +3,18 @@ var port = process.env.PORT || 3000,
     fs = require('fs'),
     html = fs.readFileSync('index.html');
 
+var myApp = angular.module('myApp', ['ngRoute'])
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+        $routeProvider.when('/home', {templateUrl: 'app/Views/Home/home.html', controller: 'homeController'});
+        $routeProvider.when('/intern101', {templateUrl: 'app/Views/intern101/intern101.html', controller: 'intern101Controller'});
+        $routeProvider.when('/events', {templateUrl: 'app/Views/events/events.html', controller: 'eventsController'});
+        
+        $locationProvider.html5Mode({enabled: true, requireBase: false});
+    }]);
+myApp.controller('homeController', ['$scope', '$location', function($scope, $location) {
+    
+}])
+
 var log = function(entry) {
     fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
 };
