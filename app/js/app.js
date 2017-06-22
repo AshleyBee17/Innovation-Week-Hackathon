@@ -1,5 +1,9 @@
-function showSideBar(){
-	var x = document.getElementById('myBar');
-	console.log(x);
-	if(x.style.display = none)
-}
+$(document).ready(function(){
+    $("#sidebarbutton").click(function(){
+        $("#myBar").slideToggle({direction:'right'});
+    });
+
+    $("#close").click(function() {
+    	$("#myBar").slideToggle();
+    })
+});
