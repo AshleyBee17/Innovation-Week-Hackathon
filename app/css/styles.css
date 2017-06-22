@@ -102,3 +102,12 @@ html,body{
 	text-align: center;
 }
 
+.spotlight-wrapper{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.spotlight-list{
+	margin-top:25px;
+}
+
