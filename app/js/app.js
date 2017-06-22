@@ -1,5 +1,9 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		slidesNavigation: false
+		slidesNavigation: false,
+		autoScrolling: false,
+		responsiveSlides: false,
+		navigation: false,
+		scrollBar: false
 	});
 });
