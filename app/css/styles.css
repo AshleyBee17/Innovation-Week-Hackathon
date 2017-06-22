@@ -22,6 +22,7 @@ html,body{
 }
 
 .sidenav a:hover{
+
 	color:gray;
 }
 
@@ -31,7 +32,7 @@ html,body{
 }
 
 .main{
-	background-color:red;
+	background-color:white;
 	height:100%;
 }
 
@@ -83,8 +84,12 @@ html,body{
 
 .women-wrapper img{
 	padding:15 15;
+	
 }
-
+.men-wrapper img{
+	padding:15 15;
+	
+}
 .landing-page{
 	background-image:url("https://i.groupme.com/1024x683.jpeg.f6a6517db7c546bf81b72d53f2307cdb");
 	background-repeat: no-repeat;
@@ -110,10 +115,25 @@ html,body{
 	text-align: center;
 }
 
+
 .no-bullets {
     list-style-type: none;
 }
 
 .fonts {
     font: "Helvetica";
+}
+.spotlight-wrapper{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.spotlight-list{
+	margin-top:25px;
+}
+
+.center{
+	text-align:center;
+	
+
 }
