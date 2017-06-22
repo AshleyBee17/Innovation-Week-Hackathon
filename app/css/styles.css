@@ -22,7 +22,7 @@ html,body{
 }
 
 .sidenav a:hover{
-	color:white;
+	color:grey;
 }
 
 #myBar{
@@ -31,7 +31,7 @@ html,body{
 }
 
 .main{
-	background-color:red;
+	background-color:white;
 	height:100%;
 }
 
@@ -58,7 +58,7 @@ html,body{
 
 .description-box{
 	border-style: solid;
-	border-color:black;
+	border-color:whitesmoke;
 }
 
 .button-wrapper{
@@ -76,8 +76,12 @@ html,body{
 
 .women-wrapper img{
 	padding:15 15;
+	
 }
-
+.men-wrapper img{
+	padding:15 15;
+	
+}
 .landing-page{
 	background-image:url("https://i.groupme.com/1024x683.jpeg.f6a6517db7c546bf81b72d53f2307cdb");
 	background-repeat: no-repeat;
@@ -112,3 +116,7 @@ html,body{
 	margin-top:25px;
 }
 
+.center{
+	text-align:center;
+	
+}
