@@ -1,3 +1,53 @@
-html{
-	
+html,body{
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.sidenav{
+	background-color: red;
+	height:100%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover{
+	color:white;
+}
+
+.main{
+	background-color:red;
+	height:100%;
+}
+
+.logo{
+	height:5em;
+}
+
+.content-area{
+	background-color:blue;
+	height:100%;
+
+}
+
+.main-wrapper{
+	width:100%;
+}
+
+.title{
+	text-align:center;
+	background-color:cyan;
+}
+
+.description-box{
+	border-style: solid;
+	border-color:black;
 }
