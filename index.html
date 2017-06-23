@@ -1,5 +1,5 @@
 
-<html>
+<html ng-app="myApp">
 	<head>
 	<!-- metadata -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,8 @@
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
 	<!-- Angular CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 
 	<!-- Foundation CDN -->
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -37,7 +38,7 @@
 	<script type="text/javascript" src="app/js/app.js"></script>
 	</head>
 
-<body>
+<body ng-controller="mainController">
 	<div class="container main-wrapper" id="fullpage">
 		<div class="section active landing-page">
 			<div class="image-wrapper">
@@ -55,10 +56,13 @@
 				</div>
 
 				<a href="#">Home</a>
-				<a href="#">Intern 101</a>
-				<a href="#">Events</a>
+				<a href="#intern101">Intern 101</a>
+				<a href="#events">Events</a>
 			</div>
 			<div class="col-md-9 content-area">
+				<div ng-view></div>
+			</div>
+			<!--<div class="col-md-9 content-area">
 				<div class="row button-wrapper">
 					<div class="col-md-12">
 						<div class="title">
@@ -96,10 +100,13 @@
 								<div class = "col-md-4 image">
 									<img src="https://i.groupme.com/1125x1500.jpeg.132660c733ba41f0ae60b764cfc69cbe" style="float:right;width:210px;height:290px;">
 								</div>
+								<div ng-view>
+									
+								</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 				</div>
 			</div>
 		</div>
